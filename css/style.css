@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+  margin: 0%;
+}
+
+.top {
+  margin: 0%;
+  color: gray;
+  float: right;
+  padding-right: 2rem;
+}
+/* display logo*/
+.logo img {
+  margin: 0%;
+  width: 200px;
+  height: 150px;
+}
+/* navigation bar*/
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0%;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-size: larger;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: xx-large;
+}
+/* for slider*/
+.container {
+  position: relative;
+}
+.slids {
+  display: none;
+}
+
+.main {
+  display: flex;
+  color: white;
+}
+/* footer*/
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin: 0.25rem;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-size: larger;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a:hover {
+  color: white;
+  font-size: xx-large;
+}
