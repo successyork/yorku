@@ -4,71 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Defination Dynamics</title>
     <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="top"><p>Email: info@dd.ca</p></div>
-    <div class="logo">
-      <img
-        src="img/PHOTO-2023-02-26-21-48-59.jpg"
-        alt="Defination Dynamics Official logo"
-      />
-    </div>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="words.html">Words</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <div class="slides"><img src="img/maracana.jpg" alt="" /></div>
-        <div class="slides"><img src="img/messi.jpg" alt="" /></div>
-        <div class="slides"><img src="img/soccer-ball-goal.webp" alt="" /></div>
-        <div class="slides">
-          <img src="img/soc_g_WCtrophy_d1_1296x729.jpg" alt="" />
-        </div>
-        <div class="slides"><img src="" alt="" /></div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt=""
+        /></a>
       </div>
-      <div class="main">
-        <div>
-          <p>
-            welcome to Defination dynamics Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Necessitatibus repellat illo alias
-            esse cupiditate assumenda dolores ipsam dolor? Harum rem, aliquam
-            repudiandae maxime deleniti exercitationem. Consequuntur fugit sed
-            officia deleniti architecto, eveniet ullam, iusto provident suscipit
-            recusandae illum pariatur quisquam sunt itaque est odio nostrum
-            quidem! Tempora inventore est et.
-          </p>
+      <div class="nav-bar">
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="words.html">Words</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
         </div>
-        <div>
-          <p>
-            A Place of possibilities Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Consequatur, assumenda totam! Non sit enim
-            voluptatem eaque quas earum, perferendis distinctio aspernatur!
-            Voluptatum, ad optio ratione et, deserunt modi dolorum tenetur
-            repellat deleniti enim magni minus iste tempora, expedita architecto
-            aliquam. Aperiam suscipit placeat eaque eum officia ad at
-            perferendis dicta!
-          </p>
+        <div class="search">
+          <input type="text" class="search-box" /> <button>Search</button>
         </div>
       </div>
+      <div class="slide-show"></div>
+      <div class="cards">
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis
+            <a href="#" onclick="return toggleCardDetails('#card1')">More</a>.
+          </p>
+          <div class="card-details" id="card1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic odit
+            doloremque corrupti molestiae sed non id totam! Qui deleniti fuga
+            inventore sequi incidunt labore voluptas atque corporis assumenda.
+            Inventore quidem tenetur cum animi ducimus excepturi rerum! Sequi
+            cumque, nam eum dolor atque nulla reprehenderit commodi id maiores
+            quod totam vitae.
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis <a href="">More</a>.
+          </p>
+          <div class="card-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et
+            ullam ratione excepturi odio recusandae iure quaerat quidem
+            voluptates accusantium! Cum obcaecati quae quas nobis consequuntur
+            quam corporis rem quod dignissimos ipsam et iusto natus architecto
+            nostrum, illo minus nesciunt blanditiis labore aut, qui reiciendis
+            laudantium? Eveniet cumque voluptatem rem!
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis <a href="">More</a>.
+          </p>
+          <div class="card-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            laborum fugit asperiores animi eveniet libero ad, voluptatem earum
+            suscipit numquam iure minus facere. Quos quod quia veniam blanditiis
+            ex, officiis facere est fugit ea earum corrupti dicta deleniti natus
+            perferendis! Mollitia optio omnis, vitae et unde exercitationem eum
+            repudiandae deserunt.
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <footer>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Words</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </footer>
-    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
