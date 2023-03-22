@@ -65,6 +65,15 @@ body {
   grid-gap: 20px;
 }
 
+.card-header {
+  font-size: bold;
+  color: red;
+}
+
+.card-header:hover {
+  color: blue;
+}
+
 .card {
   position: relative;
 }
