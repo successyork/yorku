@@ -8,14 +8,51 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
+/* main container*/
 .container {
   padding: 15px;
   height: 100%;
+  position: relative;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.dictionary-conts {
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.dictionary {
+  background: white;
+  width: 50%;
+  height: 50%;
+  color: #000;
+}
+
+.close-bar button {
+  background-color: red;
+  border-radius: 5px;
+  float: right;
+}
+
+/* main logo*/
 
 .logo img {
   max-height: 150px;
 }
+
+/* nav bar */
 
 .nav-bar {
   display: flex;
@@ -27,6 +64,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .nav ul li {
@@ -53,6 +91,8 @@ body {
   color: #000;
 }
 
+/* slider*/
+
 .slide-show {
   height: 400px;
   background: white;
@@ -74,19 +114,12 @@ body {
   color: blue;
 }
 
-.card {
-  position: relative;
+.card-body a:hover {
+  color: red;
 }
 
 .card-details {
-  visibility: hidden;
-  transition: all ease 5s;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: black;
+  display: none;
 }
 
 .contact {
@@ -97,14 +130,20 @@ body {
   margin: 10px;
 }
 
-.search button {
-  background: color #444141;
-  border: 4px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 13px;
+/* seach box*/
+
+.search input {
   padding: 6px 3px;
-  font-weight: bold;
+  width: 200px;
+  font-size: 16px;
+}
+.search button {
+  background: red;
+  border: 4px;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 3px;
   letter-spacing: 1px;
   border: none;
 }
@@ -125,4 +164,27 @@ body {
   to {
     background-position: 20vw;
   }
+}
+
+.results {
+  position: relative;
+}
+
+.results h3 {
+  font-size: 30px;
+  color: #000;
+}
+
+.results .words {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.results button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+  color: red;
 }

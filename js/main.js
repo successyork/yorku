@@ -1,9 +1,19 @@
-function toggleCardDetails(elementID) {
-  var element = document.querySelector(elementID);
-  if (element.style.visibility == "hidden") {
-    element.style.visibility = "visible";
-  } else {
-    element.style.visibility = "hidden";
-  }
+function closeOverLay() {
+  $(".overlay").hide();
+}
+
+function search() {
+  
+  openOverlay();
+}
+
+function openOverlay(text) {
+  $(".overlay-content").html(text);
+  $(".overlay").show();
+}
+
+function viewCard(cardId) {
+  openOverlay($(cardId).html());
   return false;
 }
+
