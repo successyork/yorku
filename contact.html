@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!----font url-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
+      <div class="overlay">
+        <div class="dictionary-conts">
+          <div class="dictionary">
+            <div class="close-bar">
+              <button onclick="closeOverLay()">close</button>
+            </div>
+            <div class="overlay-content"></div>
+          </div>
+        </div>
+      </div>
       <div class="logo">
         <a href="index.html"
           ><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt=""
@@ -24,18 +39,56 @@
           </ul>
         </div>
         <div class="search">
-          <input type="text" class="search-box" /> <button>Search</button>
+          <input type="text" class="search-box" placeholder="Search words..." />
+          <button onclick="search()">Search</button>
         </div>
       </div>
 
-      <div class="contact">
-        <label for="firstname">First name</label>
-        <input type="text" placeholder="" />
-        <label for="lastname">Last Name</label>
-        <input type="text" />
+      <div class="form">
+        <h4>GET IN TOUCH</h4>
+        <h2 class="form-headline">Send us a message</h2>
+        <form id="subamit-form" action="">
+          <p>
+            <input
+              id="name"
+              class="form-input"
+              type="text"
+              placeholder="Your Name*"
+              required
+            />
+          </p>
+          <p>
+            <input
+              id="email"
+              class="form-input"
+              type="email"
+              placeholder="Your Email*"
+              required
+            />
+          </p>
+
+          <p class="full-width">
+            <textarea
+              minlength="20"
+              id="message"
+              cols="30"
+              rows="7"
+              placeholder="Your Message*"
+              required
+            ></textarea>
+            <small></small>
+          </p>
+
+          <p class="full-width">
+            <input
+              type="submit"
+              class="submit-btn"
+              value="Submit"
+              onclick="checkValidations()"
+            />
+          </p>
+        </form>
       </div>
     </div>
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
