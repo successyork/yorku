@@ -25,6 +25,10 @@ body {
   background: rgba(0, 0, 0, 0.9);
 }
 
+.overlay-content {
+  margin: 30px;
+  padding: 50px 15px;
+}
 .dictionary-conts {
   justify-content: center;
   align-items: center;
@@ -99,15 +103,19 @@ body {
 }
 
 .cards {
-  margin-top: 20px;
+  margin: 20px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+.card {
+  background: darkred;
+  padding: 10px;
+}
 
 .card-header {
   font-size: bold;
-  color: red;
+  color: white;
 }
 
 .card-header:hover {

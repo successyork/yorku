@@ -3,8 +3,7 @@ function closeOverLay() {
 }
 
 function search() {
-  
-  openOverlay();
+  openOverlay("");
 }
 
 function openOverlay(text) {
@@ -16,4 +15,3 @@ function viewCard(cardId) {
   openOverlay($(cardId).html());
   return false;
 }
-
