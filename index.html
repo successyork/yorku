@@ -22,7 +22,11 @@
             <div class="close-bar">
               <button onclick="closeOverLay()">close</button>
             </div>
-            <div class="overlay-content"></div>
+            <div class="overlay-content">
+              <div class="sounds">Lorem.</div>
+              <div class="pronouce"></div>
+              <div class="not-found"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -42,9 +46,18 @@
             <li><a href="contact.html">Contact us</a></li>
           </ul>
         </div>
+        <!---search box-->
+
         <div class="search">
-          <input type="text" class="search-box" placeholder="Search words..." />
-          <button onclick="search()">Search</button>
+          <form action="#" onsubmit="return query()">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search words..."
+              id="search"
+            />
+            <button type="submit">Search</button>
+          </form>
         </div>
       </div>
       <!----slider-->

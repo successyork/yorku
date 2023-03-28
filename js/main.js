@@ -2,8 +2,16 @@ function closeOverLay() {
   $(".overlay").hide();
 }
 
-function search() {
-  openOverlay("");
+function query() {
+  var words = $("#search").val();
+  $.get("https://api.dictionaryapi.dev/api/v2/entries/en/" + words).done(
+    function (response) {
+      console.log(response);
+      var output = response[0].meanings[0].definitions[0].definition;
+      openOverlay(output);
+    }
+  );
+  return false;
 }
 
 function openOverlay(text) {

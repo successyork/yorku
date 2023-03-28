@@ -42,6 +42,7 @@ body {
   width: 50%;
   height: 50%;
   color: #000;
+  overflow-y: auto;
 }
 
 .close-bar button {
