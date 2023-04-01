@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <!----font url-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -23,9 +24,15 @@
               <button onclick="closeOverLay()">close</button>
             </div>
             <div class="overlay-content">
-              <div class="sounds">Lorem.</div>
-              <div class="pronouce"></div>
-              <div class="not-found"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+                facilis ducimus ea nostrum. Excepturi amet laudantium facilis
+                quaerat in sint minima saepe perspiciatis quas, nostrum
+                reprehenderit modi natus quam rerum. <i class="fa-solid fa-volume-high fa-shake" style="color: #fd1c1c;"></i>
+              </p>
+              <div class="sounds"><i class="fa-solid fa-volume-high fa-beat-fade" style="color: #b9040d;"></i>
+            </div>
+              <div class="spelling">/spellze/</div>
             </div>
           </div>
         </div>
@@ -49,7 +56,7 @@
         <!---search box-->
 
         <div class="search">
-          <form action="#" onsubmit="return query()">
+          <form action="#" onsubmit="return query()" autocomplete="off">
             <input
               type="text"
               class="search-box"
