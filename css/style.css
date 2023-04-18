@@ -197,3 +197,7 @@ body {
   font-size: 18px;
   color: red;
 }
+
+#plusicon {
+  text-align: center;
+}
