@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!----font url-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Defination Dynamics</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <div class="dictionary-conts">
+          <div class="dictionary">
+            <div class="close-bar">
+              <button onclick="closeOverLay()">close</button>
+            </div>
+            <div class="overlay-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt=""
+        /></a>
+      </div>
+      <div class="nav-bar">
+        <div class="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/words">Words</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input type="text" class="search-box" placeholder="Search words..." />
+          <button onclick="search()">Search</button>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis
+            <a href="#" onclick="return toggleCardDetails('#card1')">More</a>.
+          </p>
+          <div class="card-details" id="card1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic odit
+            doloremque corrupti molestiae sed non id totam! Qui deleniti fuga
+            inventore sequi incidunt labore voluptas atque corporis assumenda.
+            Inventore quidem tenetur cum animi ducimus excepturi rerum! Sequi
+            cumque, nam eum dolor atque nulla reprehenderit commodi id maiores
+            quod totam vitae.
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis <a href="">More</a>.
+          </p>
+          <div class="card-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et
+            ullam ratione excepturi odio recusandae iure quaerat quidem
+            voluptates accusantium! Cum obcaecati quae quas nobis consequuntur
+            quam corporis rem quod dignissimos ipsam et iusto natus architecto
+            nostrum, illo minus nesciunt blanditiis labore aut, qui reiciendis
+            laudantium? Eveniet cumque voluptatem rem!
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Lorem ipsum dolor sit.</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perspiciatis dignissimos minima dicta id commodi esse distinctio et
+            omnis <a href="">More</a>.
+          </p>
+          <div class="card-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            laborum fugit asperiores animi eveniet libero ad, voluptatem earum
+            suscipit numquam iure minus facere. Quos quod quia veniam blanditiis
+            ex, officiis facere est fugit ea earum corrupti dicta deleniti natus
+            perferendis! Mollitia optio omnis, vitae et unde exercitationem eum
+            repudiandae deserunt.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

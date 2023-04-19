@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---Head tage-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!----font url-->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Definition Dynamics</title>
+  </head>
+  <body>
+    <!----Maiin container div-->
+    <div class="container">
+      <div class="overlay">
+        <div class="dictionary-conts">
+          <div class="dictionary">
+            <div class="close-bar">
+              <button onclick="closeOverLay()">close</button>
+            </div>
+            <div class="overlay-content">
+              <h3 class="word"></h3>
+              <p class="definition"></p>
+              <p class="spell"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---main logo-->
+      <div class="logo">
+        <a href="/"><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt="" /></a>
+      </div>
+      <!----nav bar-->
+      <div class="nav-bar">
+        <div class="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/words">Words</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
+          </ul>
+        </div>
+        <!---search box-->
+
+        <div class="search">
+          <form action="#" onsubmit="return query()" autocomplete="off">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search words..."
+              id="search"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <!----slider-->
+      <div class="slide-show">
+        <img src="img/maracana.jpg" alt="" />
+        <img src="img/messi.jpg" alt="" />
+        <img src="img/potato.png" alt="" />
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3 class="card-header">Soccer</h3>
+          <p class="card-body">
+            A form of football played between two teams of 11 players each, in
+            which the ball may be advanced by kicking or by bouncing it off any
+            part of the body but the arms and hands, except in the case of the
+            goalkeepers, who may use their hands to catch, carry, throw, or stop
+            the ball.
+            <a href="#" onclick="return viewCard('#card1')">Click for More</a>
+          </p>
+          <div class="card-details" id="card1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic odit
+            doloremque corrupti molestiae sed non id totam! Qui deleniti fuga
+            inventore sequi incidunt labore voluptas atque corporis assumenda.
+            Inventore quidem tenetur cum animi ducimus excepturi rerum! Sequi
+            cumque, nam eum dolor atque nulla reprehenderit commodi id maiores
+            quod totam vitae.
+            <div>
+              <img src="img/soccer.png" alt="" width="200px" height="150px" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Tomato</h3>
+          <p class="card-body">
+            Any of several plants belonging to the genus Lycopersicon, of the
+            nightshade family, native to Mexico and Central and South America,
+            especially the widely cultivated species L. lycopersicum, bearing a
+            mildly acid, pulpy...<a href="#" onclick="return viewCard('#card2')"
+              >Click for More</a
+            >.
+          </p>
+          <div class="card-details" id="card2">
+            Any of several plants belonging to the genus Lycopersicon, of the
+            nightshade family, native to Mexico and Central and South America,
+            especially the widely cultivated species L. lycopersicum, bearing a
+            mildly acid, pulpy, usually red fruit eaten raw or cooked as a
+            vegetable.
+            <div>
+              <img src="img/tomato.png" alt="" width="200px" height="150px" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-header">Potato</h3>
+          <p class="card-body">
+            Also called Irish potato, white potato. the edible tuber of a
+            cultivated plant Solanum tuberosum, of the nightshade family...
+            <a href="#" onclick="return viewCard('#card3')">Click for More</a>
+          </p>
+          <div class="card-details" id="card3">
+            The potato is a starchy food, a tuber of the plant Solanum tuberosum
+            and is a root vegetable native to the Americas. The plant is a
+            perennial in the nightshade family Solanaceae.[2] Wild potato
+            species can be found from the southern United States to southern
+            Chile.[3] The potato was originally believed to have been
+            domesticated by Native Americans independently in multiple
+            locations,[4] but later genetic studies traced a single origin, in
+            the area of present-day southern Peru and extreme northwestern
+            Bolivia. Potatoes were domesticated there approximately 7,000–10,000
+            years ago, from a species in the Solanum brevicaule complex.
+
+            <div>
+              <img src="img/potato.png" alt="" width="200px" height="150px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
