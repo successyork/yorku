@@ -13,6 +13,7 @@
     <title>Defination Dynamics</title>
   </head>
   <body>
+    <!----Maiin container div-->
     <div class="container">
       <div class="overlay">
         <div class="dictionary-conts">
@@ -20,15 +21,26 @@
             <div class="close-bar">
               <button onclick="closeOverLay()">close</button>
             </div>
-            <div class="overlay-content"></div>
+            <div class="overlay-content">
+              <h3 class="word"></h3>
+              <p class="definition"></p>
+              <div><strong>Pronounciation</strong></div>
+              <div class="phonetics">
+                <div class="phonetic"></div>
+                <button class="play-audio" onclick="playAudio()">Play</button>
+                <audio id="audio">
+                  <source src="" id="audio-source" type="audio/mpeg" />
+                </audio>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!---main logo-->
       <div class="logo">
-        <a href="index.html"
-          ><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt=""
-        /></a>
+        <a href="/"><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt="" /></a>
       </div>
+      <!----nav bar-->
       <div class="nav-bar">
         <div class="nav">
           <ul>
@@ -38,9 +50,18 @@
             <li><a href="/contact-us">Contact us</a></li>
           </ul>
         </div>
+        <!---search box-->
+
         <div class="search">
-          <input type="text" class="search-box" placeholder="Search words..." />
-          <button onclick="search()">Search</button>
+          <form action="#" onsubmit="return query()" autocomplete="off">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search words..."
+              id="search"
+            />
+            <button type="submit">Search</button>
+          </form>
         </div>
       </div>
       <div class="form">

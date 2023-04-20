@@ -13,6 +13,7 @@
     <title>Defination Dynamics</title>
   </head>
   <body>
+    <!----Maiin container div-->
     <div class="container">
       <div class="overlay">
         <div class="dictionary-conts">
@@ -20,15 +21,26 @@
             <div class="close-bar">
               <button onclick="closeOverLay()">close</button>
             </div>
-            <div class="overlay-content"></div>
+            <div class="overlay-content">
+              <h3 class="word"></h3>
+              <p class="definition"></p>
+              <div><strong>Pronounciation</strong></div>
+              <div class="phonetics">
+                <div class="phonetic"></div>
+                <button class="play-audio" onclick="playAudio()">Play</button>
+                <audio id="audio">
+                  <source src="" id="audio-source" type="audio/mpeg" />
+                </audio>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!---main logo-->
       <div class="logo">
-        <a href="index.html"
-          ><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt=""
-        /></a>
+        <a href="/"><img src="img/PHOTO-2023-02-26-21-48-59.jpg" alt="" /></a>
       </div>
+      <!----nav bar-->
       <div class="nav-bar">
         <div class="nav">
           <ul>
@@ -38,92 +50,205 @@
             <li><a href="/contact-us">Contact us</a></li>
           </ul>
         </div>
+        <!---search box-->
+
         <div class="search">
-          <input type="text" class="search-box" placeholder="Search words..." />
-          <button onclick="search()">Search</button>
+          <form action="#" onsubmit="return query()" autocomplete="off">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search words..."
+              id="search"
+            />
+            <button type="submit">Search</button>
+          </form>
         </div>
       </div>
       <div class="cards">
         <div class="card">
-          <h3 class="card-header"><h2>Krumping</h2> ['krəmpiNG]</h3>
+          <h3 class="card-header">
+            <h2>Krumping</h2>
+            ['krəmpiNG]
+          </h3>
           <p class="card-body">
-            Krumping is a style of dance that originated in the early 2000s in Los Angeles, California, particularly in the African-American community. It is a highly energetic and expressive form of street dance that is characterized by its fast, aggressive, and exaggerated movements. Krumping is often associated with freestyle improvisation and is typically performed in battles or cyphers, where dancers take turns showcasing their skills and creativity.<br>
-            Synonyms: Clowning - Another style of dance that originated alongside krumping and shares similar movements and improvisational elements.
+            Krumping is a style of dance that originated in the early 2000s in
+            Los Angeles, California, particularly in the African-American
+            community. It is a highly energetic and expressive form of street
+            dance that is characterized by its fast, aggressive, and exaggerated
+            movements. Krumping is often associated with freestyle improvisation
+            and is typically performed in battles or cyphers, where dancers take
+            turns showcasing their skills and creativity.<br />
+            Synonyms: Clowning - Another style of dance that originated
+            alongside krumping and shares similar movements and improvisational
+            elements.
             <a href="#" onclick="return viewCard('#card1')">More</a>.
           </p>
           <div class="card-details" id="card1">
-            Krumping has its roots in the African-American community and is often associated with the hip-hop culture. It emerged as a form of resistance and self-expression for young people in marginalized communities, providing them with an outlet to express themselves creatively and positively. Krumping has gained recognition and popularity worldwide through dance competitions, documentaries, and media exposure, and has evolved into various styles and sub-genres over the years.<br>
-            <br>
-            Opposite: Formal dance styles - Dance forms that are highly structured and follow specific techniques and choreography, such as ballet or ballroom dance.<br>
-            <br>
+            Krumping has its roots in the African-American community and is
+            often associated with the hip-hop culture. It emerged as a form of
+            resistance and self-expression for young people in marginalized
+            communities, providing them with an outlet to express themselves
+            creatively and positively. Krumping has gained recognition and
+            popularity worldwide through dance competitions, documentaries, and
+            media exposure, and has evolved into various styles and sub-genres
+            over the years.<br />
+            <br />
+            Opposite: Formal dance styles - Dance forms that are highly
+            structured and follow specific techniques and choreography, such as
+            ballet or ballroom dance.<br />
+            <br />
             <img src="img/krumpdance.png" alt="" width="200px" height="100px" />
           </div>
         </div>
         <div class="card">
-          <h3 class="card-header"><h2>Metaphysics</h2> [medə'fiziks]</h3>
+          <h3 class="card-header">
+            <h2>Metaphysics</h2>
+            [medə'fiziks]
+          </h3>
           <p class="card-body">
-            Metaphysics is a branch of philosophy that deals with the fundamental nature of reality, including abstract concepts that go beyond the physical world. It explores questions about the ultimate nature of existence, being, substance, and causality. Metaphysics seeks to understand the underlying principles, principles, and laws that govern the universe and the nature of reality itself.<br>
+            Metaphysics is a branch of philosophy that deals with the
+            fundamental nature of reality, including abstract concepts that go
+            beyond the physical world. It explores questions about the ultimate
+            nature of existence, being, substance, and causality. Metaphysics
+            seeks to understand the underlying principles, principles, and laws
+            that govern the universe and the nature of reality itself.<br />
             Synonym: Ontology - The study of being, existence, and reality.
-            
+
             <a href="#" onclick="return viewCard('#card2')">More</a>.
           </p>
           <div class="card-details" id="card2">
-            In metaphysics, philosophers examine the nature of reality beyond what can be observed or measured with the senses. It delves into abstract concepts such as the relationship between mind and matter, the nature of time and space, the concept of universals and particulars, and the existence of abstract entities like numbers or ideas. Metaphysics often goes beyond empirical evidence and scientific methods to explore questions that cannot be answered through empirical observation alone.<br>
-            <br>
-            Opposite: Nihilism - The philosophical belief that life is without objective meaning, purpose, or intrinsic value, and that there is no inherent order or structure to the universe.<br>
-            <br>
+            In metaphysics, philosophers examine the nature of reality beyond
+            what can be observed or measured with the senses. It delves into
+            abstract concepts such as the relationship between mind and matter,
+            the nature of time and space, the concept of universals and
+            particulars, and the existence of abstract entities like numbers or
+            ideas. Metaphysics often goes beyond empirical evidence and
+            scientific methods to explore questions that cannot be answered
+            through empirical observation alone.<br />
+            <br />
+            Opposite: Nihilism - The philosophical belief that life is without
+            objective meaning, purpose, or intrinsic value, and that there is no
+            inherent order or structure to the universe.<br />
+            <br />
             <img src="img/metaphysics.png" alt="" width="180px" height="110x" />
           </div>
         </div>
         <div class="card">
-          <h3 class="card-header"><h2>Euphoria</h2> [yo͞o'fôrēə]</h3>
+          <h3 class="card-header">
+            <h2>Euphoria</h2>
+            [yo͞o'fôrēə]
+          </h3>
           <p class="card-body">
-            Euphoria is a noun that refers to a state or feeling of intense happiness, excitement, or joy. It is often characterized by an overwhelming sense of well-being, elation, or exultation. Euphoria can be experienced both mentally and physically, often accompanied by a sense of euphoric energy or a heightened state of positivity.<br>
+            Euphoria is a noun that refers to a state or feeling of intense
+            happiness, excitement, or joy. It is often characterized by an
+            overwhelming sense of well-being, elation, or exultation. Euphoria
+            can be experienced both mentally and physically, often accompanied
+            by a sense of euphoric energy or a heightened state of
+            positivity.<br />
             Synonyms: elation, ecstasy, bliss, happiness, joy, exhilaration
-            
+
             <a href="#" onclick="return viewCard('#card3')">More</a>.
           </p>
           <div class="card-details" id="card3">
-            Euphoria is often described as a state of extreme happiness or joy that is intense and all-encompassing, often accompanied by physical sensations such as tingling, increased heart rate, and a sense of euphoric "high." It can be a fleeting experience or last for an extended period of time, depending on the circumstances that trigger it. Euphoria is a subjective experience and can vary greatly from person to person, as different individuals may find joy and happiness in different things or situations. It is important to note that while euphoria is generally considered a positive emotional state, it can also be associated with excessive or reckless behavior, and in some cases, it may be a symptom of certain medical or mental health conditions.<br>
-            <br>
-            Opposite: Melancholy, depression, sadness, gloominess, despondency<br>
-            <br>
+            Euphoria is often described as a state of extreme happiness or joy
+            that is intense and all-encompassing, often accompanied by physical
+            sensations such as tingling, increased heart rate, and a sense of
+            euphoric "high." It can be a fleeting experience or last for an
+            extended period of time, depending on the circumstances that trigger
+            it. Euphoria is a subjective experience and can vary greatly from
+            person to person, as different individuals may find joy and
+            happiness in different things or situations. It is important to note
+            that while euphoria is generally considered a positive emotional
+            state, it can also be associated with excessive or reckless
+            behavior, and in some cases, it may be a symptom of certain medical
+            or mental health conditions.<br />
+            <br />
+            Opposite: Melancholy, depression, sadness, gloominess,
+            despondency<br />
+            <br />
             <img src="img/euphoria.jpg" alt="" width="180px" height="110x" />
           </div>
         </div>
       </div>
       <div class="cards">
         <div class="card">
-          <h3 class="card-header"><h2>Gastronomy</h2> [ga'stränəmē]</h3>
+          <h3 class="card-header">
+            <h2>Gastronomy</h2>
+            [ga'stränəmē]
+          </h3>
           <p class="card-body">
-            Gastronomy is an advanced culinary term that encompasses the study and appreciation of food and its cultural, historical, and social significance. It goes beyond the mere act of cooking and eating, and delves into the art, science, and philosophy of food. Gastronomy involves a deep understanding of ingredients, cooking techniques, flavor profiles, food pairings, and presentation. It also considers factors such as food sustainability, food ethics, and the impact of food on health and well-being. Gastronomes are knowledgeable about regional and international cuisines, culinary traditions, and food history.<br>
+            Gastronomy is an advanced culinary term that encompasses the study
+            and appreciation of food and its cultural, historical, and social
+            significance. It goes beyond the mere act of cooking and eating, and
+            delves into the art, science, and philosophy of food. Gastronomy
+            involves a deep understanding of ingredients, cooking techniques,
+            flavor profiles, food pairings, and presentation. It also considers
+            factors such as food sustainability, food ethics, and the impact of
+            food on health and well-being. Gastronomes are knowledgeable about
+            regional and international cuisines, culinary traditions, and food
+            history.<br />
             Synonyms: culinary science, culinary art
             <a href="#" onclick="return viewCard('#card4')">More</a>.
           </p>
           <div class="card-details" id="card4">
-            Gastronomy is often associated with culinary arts and fine dining, and it is appreciated by those who have a deep passion for food and a desire to elevate it to an art form. It is considered an advanced term in the culinary world due to the depth of knowledge and understanding it requires, and it is often studied and practiced by professional chefs, food writers, and culinary enthusiasts who seek to immerse themselves in the multifaceted world of food.<br>
-            <br>
+            Gastronomy is often associated with culinary arts and fine dining,
+            and it is appreciated by those who have a deep passion for food and
+            a desire to elevate it to an art form. It is considered an advanced
+            term in the culinary world due to the depth of knowledge and
+            understanding it requires, and it is often studied and practiced by
+            professional chefs, food writers, and culinary enthusiasts who seek
+            to immerse themselves in the multifaceted world of food.<br />
+            <br />
             <img src="img/gastronomy.jpg" alt="" width="180px" height="110x" />
           </div>
         </div>
         <div class="card">
-          <h3 class="card-header"><h2>Proprioception</h2> ['prōprēə'sepSH(ə)n]</h3>
+          <h3 class="card-header">
+            <h2>Proprioception</h2>
+            ['prōprēə'sepSH(ə)n]
+          </h3>
           <p class="card-body">
-            Proprioception is an advanced term in sports that refers to the ability of the body to sense and perceive its own position and movement in space. It involves the sensory feedback and awareness of the body's position, balance, and motion, and is an important aspect of motor control and coordination. Proprioception is essential for athletes in various sports, as it plays a critical role in maintaining balance, stability, and coordination during complex movements. It helps athletes to accurately control their body position, adjust their movements, and respond to changes in their environment, such as uneven surfaces or opponents' movements.<br>
+            Proprioception is an advanced term in sports that refers to the
+            ability of the body to sense and perceive its own position and
+            movement in space. It involves the sensory feedback and awareness of
+            the body's position, balance, and motion, and is an important aspect
+            of motor control and coordination. Proprioception is essential for
+            athletes in various sports, as it plays a critical role in
+            maintaining balance, stability, and coordination during complex
+            movements. It helps athletes to accurately control their body
+            position, adjust their movements, and respond to changes in their
+            environment, such as uneven surfaces or opponents' movements.<br />
             Synonyms: Kinesthesia, body awareness
             <a href="#" onclick="return viewCard('#card5')">More</a>.
           </p>
           <div class="card-details" id="card5">
-          Athletes with well-developed proprioceptive abilities are often able to perform complex movements with precision and efficiency, which can enhance their performance and reduce the risk of injuries. Proprioception training, which involves exercises and drills that challenge the body's proprioceptive abilities, is often incorporated into the training programs of professional athletes and advanced sports practitioners.<br>
-          <br>
-          Opposite: disequilibrium
-          <br>
-          <img src="img/proprioception.jpg" alt="" width="200px" height="110x" />
+            Athletes with well-developed proprioceptive abilities are often able
+            to perform complex movements with precision and efficiency, which
+            can enhance their performance and reduce the risk of injuries.
+            Proprioception training, which involves exercises and drills that
+            challenge the body's proprioceptive abilities, is often incorporated
+            into the training programs of professional athletes and advanced
+            sports practitioners.<br />
+            <br />
+            Opposite: disequilibrium
+            <br />
+            <img
+              src="img/proprioception.jpg"
+              alt=""
+              width="200px"
+              height="110x"
+            />
           </div>
         </div>
         <div class="card" id="plusicon">
-          <p><br><br><br><br><br></p>
-          <a href="contact.html"><img src="img/plusicon.png" alt="add a word" width="100px" height="100x" /></a>
+          <p><br /><br /><br /><br /><br /></p>
+          <a href="contact.html"
+            ><img
+              src="img/plusicon.png"
+              alt="add a word"
+              width="100px"
+              height="100x"
+          /></a>
         </div>
       </div>
     </div>
