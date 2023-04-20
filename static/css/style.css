@@ -30,6 +30,15 @@ body {
   padding: 50px 15px;
 }
 
+.phonetics {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.phonetic {
+  margin-right: 20px;
+}
+
 .word {
   text-transform: capitalize;
 }

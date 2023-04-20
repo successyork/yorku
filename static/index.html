@@ -28,7 +28,14 @@
             <div class="overlay-content">
               <h3 class="word"></h3>
               <p class="definition"></p>
-              <p class="spell"></p>
+              <div><strong>Pronounciation</strong></div>
+              <div class="phonetics">
+                <div class="phonetic" ></div>
+                <button class="play-audio" onclick="playAudio()">Play</button>
+                <audio id="audio">
+                  <source src="" id="audio-source" type="audio/mpeg">
+                </audio>
+              </div>
             </div>
           </div>
         </div>
